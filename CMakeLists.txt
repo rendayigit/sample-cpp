@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.21)
+project(app LANGUAGES CXX)
+
+# Set target directory
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/bin/)
+
+# Include SourceFiles.cmake to access the SOURCEFILES and INCLUDEDIRS variables
+include(${CMAKE_SOURCE_DIR}/src/SourceFiles.cmake)
+
+add_executable(app ${SOURCEFILES})
+
+target_link_libraries(app PRIVATE 
+${CMAKE_SOURCE_DIR}/deps/ddc-driver/lib/libemacepl.a
+)
+
+target_include_directories(app PUBLIC ${INCLUDEDIRS}
+    ${CMAKE_SOURCE_DIR}/deps/ddc-driver/include/emacepl
+    ${CMAKE_SOURCE_DIR}/deps/ddc-driver/include/ddcacex
+)

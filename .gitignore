@@ -1,0 +1,10 @@
+# Executables
+bin/
+tests/bin/
+
+# CMake build directory
+build/
+tests/build/
+
+# clangd cache
+.cache/
