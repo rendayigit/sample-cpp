@@ -8,3 +8,6 @@ tests/build/
 
 # clangd cache
 .cache/
+
+# coverage data
+coverage/
