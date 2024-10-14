@@ -10,9 +10,7 @@
         "eamodio.gitlens",
         "christian-kohler.path-intellisense",
         "esbenp.prettier-vscode",
-        "slint.slint",
         "spmeesseman.vscode-taskexplorer",
         "gruntfuggly.todo-tree",
-        "rjmacarthy.twinny"
     ]
 }
