@@ -10,16 +10,16 @@ cmake \
 -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++ \
 -DENABLE_COVERAGE=ON \
 -S$SCRIPTDIR/../tests/  \
--B$SCRIPTDIR/../tests/build/ \
+-B$SCRIPTDIR/../build/ \
 -G "Unix Makefiles"
 
 # Build
 cmake \
---build $SCRIPTDIR/../tests/build/ \
+--build $SCRIPTDIR/../build/ \
 --config Debug \
 --target all \
 -j$((`nproc`+2)) --
 
 # Run unit tests
-cd $SCRIPTDIR/../tests/bin/
+cd $SCRIPTDIR/../bin/
 ./tests

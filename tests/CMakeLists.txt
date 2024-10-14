@@ -10,10 +10,10 @@ if(${ENABLE_COVERAGE})
 endif()
 
 # Set target directory
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/bin/)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/)
 
 # Include SourceFiles.cmake to access the SOURCEFILES and INCLUDEDIRS variables
-include(${CMAKE_SOURCE_DIR}/TestFiles.cmake)
+include(${CMAKE_SOURCE_DIR}/tests/TestFiles.cmake)
 
 add_executable(tests ${TESTFILES})
 

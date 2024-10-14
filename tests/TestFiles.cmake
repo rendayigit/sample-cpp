@@ -1,5 +1,5 @@
 set(TESTFILES
-    ${CMAKE_SOURCE_DIR}/sampleTest.cpp)
+    ${CMAKE_SOURCE_DIR}/tests/sampleTest.cpp)
 
 set(INCLUDEDIRS
-    ${CMAKE_SOURCE_DIR}/../src/)
+    ${CMAKE_SOURCE_DIR}/src/)
